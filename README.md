@@ -1,4 +1,4 @@
-## Projeto feito em React js através das video aula da Alura
+## Projeto criado em React js (Portfolio)
 
 ### Pode acompanhar a evolução do projeto através da url
 
