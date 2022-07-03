@@ -6,7 +6,7 @@ export const BannerImg = styled.div`
     background-color: #272626;
     height: 770px;
     @media(max-width: 991px){
-        background-image: none;
+        background-image: none !important;
         height: auto;
     }
 `;
@@ -16,7 +16,8 @@ export const GridTitle = styled.div`
     grid-template-columns: 50% 50%;
     padding: 190px 0 0;
     @media(max-width: 991px){
-        padding: 28px 0 0 10px;
+        padding: 28px 0 0 20px;
+        grid-template-columns: 100%;
     }
     > div {
         padding: 0 50px 0 0;
@@ -47,10 +48,13 @@ export const GridTitle = styled.div`
             }
         }
     }
-`;
+    `;
 
 export const SocialMidia = styled.div`
     padding: 35px 0 0;
+    @media(max-width: 991px){
+        padding: 30px 20px;
+    }
     a{
         svg{
             font-size: 25px;
