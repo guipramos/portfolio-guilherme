@@ -2,47 +2,47 @@ import React, { FormEvent, useState } from 'react';
 import {FormBox} from '../Contato/style'
 import axios from 'axios';
 
-// interface FormData {
-//     getAll(): string[]
-// }
+interface FormData {
+    getAll(): string[]
+}
 
 
-// const initialValue: { [key: string]: any } = {
-//     nome: '',
-// 	email: '',
-// 	tel: '',
-// 	mensagem: '',
-// }
+const initialValue: { [key: string]: any } = {
+    nome: '',
+	email: '',
+	tel: '',
+	mensagem: '',
+}
 
 export function Contato(){
 
-    // const [fieldText, setFieldText] = useState(initialValue);
+    const [fieldText, setFieldText] = useState(initialValue);
 
-	// const handleInputChange = (event: any) => {
-	// 	fieldText[event.target.name] = event.target.value;
-	// 	setFieldText(fieldText)
-	// }
+	const handleInputChange = (event: any) => {
+		fieldText[event.target.name] = event.target.value;
+		setFieldText(fieldText)
+	}
 
-	// const handleFormSubmit = (event: FormEvent) => {
-	// 	event.preventDefault();
-    //     send();
-	// 	console.log(fieldText);
-	// }
+	const handleFormSubmit = (event: FormEvent) => {
+		event.preventDefault();
+        send();
+		console.log(fieldText);
+	}
 
-    // function send(){
-    //     const formData = new FormData();
-    //     Object.keys(fieldText).forEach(key => formData.append(key, fieldText[key]));
-    //     axios.post('/send', formData, {
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         }
-    //     })
-    //     .then(response => alert(response.data));
-    // }
+    function send(){
+        const formData = new FormData();
+        Object.keys(fieldText).forEach(key => formData.append(key, fieldText[key]));
+        axios.post('/send', formData, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => alert(response.data));
+    }
     
     return (
         <FormBox id="contato">
-            {/* <form onSubmit={handleFormSubmit}>
+            <form onSubmit={handleFormSubmit}>
                 <div>
                     <label htmlFor="nome">Nome:</label>
                     <input type="text" name="nome" placeholder="Nome" id="nome" onChange={handleInputChange} />
@@ -60,7 +60,7 @@ export function Contato(){
                     <textarea id="mensagem" name='mensagem' placeholder='Deixa sua mensagem...' onChange={handleInputChange}></textarea>
                 </div>
                 <button type='submit'>Enviar</button>
-            </form> */}
+            </form>
         </FormBox>
     )
 }

@@ -7,7 +7,7 @@ export function Header(){
     return (
         <div>
             <Container>
-                <div className="container gr-relative-search"></div>
+                {/* <div className="container gr-relative-search"></div> */}
                 <Navbar />
             </Container>
         </div>

@@ -3,8 +3,6 @@ import {SearchField} from './style';
 
 export function Search(){
     return(
-        <SearchField>
-            
-        </SearchField>
+        <SearchField></SearchField>
     );
 }
