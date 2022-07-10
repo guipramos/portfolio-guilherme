@@ -77,12 +77,12 @@ export const Accordion = styled.div`
 		padding: 0 20px;
 	}
     .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
-        border-radius: 5px 5px 0 0;
-        box-shadow: 1px 3px 6px 0 rgb(50 50 50 / 20%);
-        margin-bottom: 20px;
+        border-radius: 5px 5px 0 0 !important;
+        box-shadow: 1px 3px 6px 0 rgb(50 50 50 / 20%) !important;
+        margin-bottom: 20px !important;
     }
     .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
-        background-color: #ffaf00;
+        background-color: #ffaf00 !important;
         .css-ahj2mt-MuiTypography-root{
             color: #fff;
             font-weight: 800;
