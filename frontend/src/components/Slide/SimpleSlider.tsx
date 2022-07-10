@@ -42,7 +42,7 @@ export function SimpleSlider(){
                 {projetos.map((projeto) => 
                     <div className="item__projeto">
                         <div className="item__projeto--img">
-                            <img src={projeto.imagem} alt="Projeto item" />
+                            <img src={projeto.imagem} alt="Projeto items" />
                         </div>
                         <a href={projeto.url} className='item__projeto--link' target="_blank">
                             <legend className='item__projeto--legenda-card'>
