@@ -14,5 +14,15 @@ export const Container = styled.div`
             flex-direction: column;
         }
     }
+    .btn__whats{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        img{
+            width: 64px;
+            height: 64px
+        }
+    }
 `;
 
