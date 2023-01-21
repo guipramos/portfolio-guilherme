@@ -33,14 +33,19 @@ export function Content(){
 			<BgSobre style={{ backgroundImage: `url(${bgSobre})` }} id='sobre'>
 				<Container>
 						<GridTitle>
-							<div>
-								<h1 className='title__about'>UM POUCO SOBRE MIM</h1>
-
-								<p>Desenvolvedor Front-End, formado em Tecnologia da Internet pelo Senac com mais de 3 anos de experiência na área.</p>
-								<p>Tenho experiência na área de desenvolvimento, criando Landing pages, sites institucionais e manutenção de páginas. Experiência com as seguintes tecnologias:</p>
-								<p>Linguagens: HTML, CSS, Sass, Gulp, JavaScript e ReactJS</p>
-								<p>Ferramenta: Wordpress</p>
-							</div>
+						<div>
+							<h1 className='title__about'>SOBRE MINHA CARREIRA</h1>
+							<p>Sou desenvolvedor Front-End com formação em Tecnologia da Internet pelo Senac e mais de três anos de experiência na área. Tenho experiência em criação de landing pages, sites institucionais e manutenção de páginas, usando as seguintes tecnologias:</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Sass</li>
+								<li>Gulp</li>
+								<li>JavaScript</li>
+								<li>ReactJS</li>
+							</ul>
+							<p>Também possuo experiência com a ferramenta Wordpress.</p>
+						</div>
 						</GridTitle>
 				</Container>
 			</BgSobre>

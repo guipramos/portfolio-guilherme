@@ -24,7 +24,7 @@ export const FooterMain = styled.div`
 				padding: 0 20px 25px 0;
         	}
 		}
-		.icon__contato{
+		.contact__details{
 			display: flex;
 			svg{
 				margin-right: 15px;
@@ -41,6 +41,9 @@ export const FooterMain = styled.div`
 				}
 			}
 		} 
+	}
+	.contact__method {
+    display: flex;
 	}
 	.copyright {
 		display: flex;

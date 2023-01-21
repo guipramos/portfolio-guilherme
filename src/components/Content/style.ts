@@ -14,10 +14,10 @@ export const GridTitle = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 237px 0 50px;
-	@media(max-width: 991px){
-		padding: 70px 25px 50px 20px;
-		grid-template-columns: 100%;
-	}
+		@media(max-width: 991px){
+			padding: 70px 25px 50px 20px;
+			grid-template-columns: 100%;
+		}
     .title__about {
         font-size: 40px;
         font-weight: 800;
@@ -42,6 +42,17 @@ export const GridTitle = styled.div`
 		margin-bottom: 20px;
 		font-size: 1.09rem;
 	}
+	ul{
+		display: flex;
+		li {
+			list-style: none;
+			background-color: #ffaf00;
+			padding: 5px 22px;
+			margin: 0 15px 20px 0;
+			border-radius: 10px;
+			color: #fff;
+		}
+	} 
 `;
 
 export const Service = styled.div`
