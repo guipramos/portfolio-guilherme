@@ -15,11 +15,11 @@ import { SimpleSlider } from '../Slide/SimpleSlider';
 const acordeon = [
 	{
 			title: "Institucional",
-			texto: "Criação de site institucional para a sua empresa.",
+			texto: "Criamos sites institucionais personalizados para sua empresa, destacando sua marca e alcançando seus objetivos de negócios. Trabalhamos com você para criar um site atraente, fácil de navegar e otimizado para mecanismos de busca, aumentando sua presença online e atraindo novos clientes.",
 	},
 	{
 			title: "Wordpress",
-			texto: "Desenvolvimento de Temas , Customização de Templates, Correções, Atualizações em seu site.",
+			texto: "Oferecemos manutenção e atualização em seu site, garantindo que ele esteja sempre funcionando corretamente e atualizado. Nossa equipe de especialistas trabalhará com você para entender suas necessidades e manter o site em sintonia com sua marca e objetivos de negócios.",
 	},
 	{
 			title: "Landing Page",
