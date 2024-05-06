@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, GridTitle, Preject, Service } from '../Content/style';
+import { Accordion, GridTitle, Project, Service } from '../Content/style';
 import { Container } from '../Header/style';
 import bgSobre from '../../assets/img/banner_eu.png';
 import { BgSobre } from './style';
@@ -10,7 +10,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { SimpleSlider } from '../Slide/SimpleSlider';
-// import { ButtonComponent } from '../Button/Button';
 
 const acordeon = [
 	{
@@ -56,6 +55,7 @@ export function Content(){
 						{acordeon.map( (item) => 
 							<AccordionPackage>
 								<AccordionSummary
+									key={item.title}
 									expandIcon={<ExpandMoreIcon />}
 									aria-controls="panel1a-content"
 									id="panel1a-header"
@@ -70,13 +70,14 @@ export function Content(){
 					</Accordion>
 				</Container>
 			</Service>
-			<Preject id='projetos'>
+			<Project id='projetos'>
 				<Container>
-					<h3 className='title'>Projetos</h3>
+					<h3>Projetos recente</h3>
+          <h4>Meu portfólio</h4>
 					<SimpleSlider />
 					{/* <ButtonComponent /> */}
 				</Container>
-			</Preject>
+			</Project>
 		</>
 	);
 }

@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React from "react";
 
 import tango from '../../assets/img/tango.png';
 import yozzi from '../../assets/img/Yozzi.png';
 import forrest from '../../assets/img/forrest.png';
+import { Card } from "../Content/style";
 
 const projetos = [
 	{
@@ -27,34 +27,34 @@ const projetos = [
 ]
 
 export function SimpleSlider(){
-    // const settings = {
-    //   dots: true,
-    //   infinite: true,
-    //   speed: 500,
-    //   slidesToShow: 3,
-    //   slidesToScroll: 3
-    // };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 3
+  // };
 
-    return (
-      <div>
-        {/* <Slider {...settings}> */}
-            <div className="projetos__grupo">
-                {projetos.map((projeto) => 
-                    <div className="item__projeto">
-                        <div className="item__projeto--img">
-                            <img src={projeto.imagem} alt="Projeto items" />
-                        </div>
-                        <a href={projeto.url} className='item__projeto--link' target="_blank">
-                            <legend className='item__projeto--legenda-card'>
-                                    <span>{projeto.title}</span>
-                                    <span>Ano: {projeto.ano}</span>
-                            </legend>
-                            <span>Clique para conhecer um pouco do projeto</span>
-                        </a>
-                    </div>
-                )}
-            </div>
-        {/* </Slider> */}
-      </div>
-    );
+  return (
+    <div>
+      {/* <Slider {...settings}> */}
+        <Card >
+          {projetos.map((projeto, index) => 
+              <div className="item__projeto" key={index}>
+                <div className="item__projeto--img">
+                  <img src={projeto.imagem} alt="Projeto items" />
+                </div>
+                <div className='item__projeto--link'>
+                  <legend className='item__projeto--legenda-card'>
+                    <span>{projeto.title}</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                  </legend>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+            )}
+        </Card>
+      {/* </Slider> */}
+    </div>
+  );
 }

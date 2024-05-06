@@ -17,10 +17,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <Banner />
       <Content />
-      <Footer />
+      <Footer /> */}
+      <div className='manutencao'>
+        <span>Pagina em construção</span>
+      </div>
       <GlobalStyle/>
     </div>
   );

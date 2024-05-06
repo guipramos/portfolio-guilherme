@@ -110,90 +110,60 @@ export const Accordion = styled.div`
     }
 `;
 
-export const Preject = styled.div`
-    position: relative;
-    background-color: #dcdcdc;
-    .title{
-        font-size: 40px;
-		font-weight: 800;
-		text-transform: uppercase;
-		font-family: Montserrat,sans-serif;
-		position: relative;
-        padding: 70px 0 50px;
-		@media(max-width: 991px){
-			padding: 70px 20px 50px;
-		}
-		&:after{
-			content: "";
-			position: absolute;
-			bottom: 40px;
-			left: 0;
-			width: 120px;
-			height: 5px;
-			border-radius: 50px;
-			background-color: #FFAF00;
-			@media(max-width: 991px){
-				left: 21px
-			}
-		}
+export const Project = styled.div`
+  h3 {
+    color: #282938;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 32px
+  }
+  h4 {
+    color: #282938;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    margin: 21px 0 107px;
+  }
+`;
+
+export const Card = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  .item__projeto {
+    background-color: #fff;
+    width: 100%;
+    max-width: 350px;
+    height: 440px;
+    margin-right: 40px;
+    border-radius: 8px;
+    .item__projeto--img img {
+      border-radius: 8px;
     }
-	.projetos__grupo{
-		display: grid;
-		grid-template-columns: repeat(3,1fr);
-		padding-bottom: 125px;
-		@media(max-width: 991px){
-			grid-template-columns: 100%;
-			padding: 0 20px 115px;
-		}
-		.item__projeto{
-			margin: 0 35px 17px 0;
-			position: relative;
-			transition: opacity .4s;
-			@media(max-width: 991px){
-				margin: 0 0 17px 0;
-			}
-			&:hover{
-				.item__projeto--link{
-					bottom: 5px;
-    				opacity: 1;
-				}
-			}
-			.item__projeto--img{
-				img{
-					border-radius: 12px;
-					width: 100%;
-				}
-			}
-			.item__projeto--link{
-				position: absolute;
-				bottom: -20px;
-				left: 0;
-				background-color: rgba(0,0,0,.5);
-				display: inline-block;
-				width: 100%;
-				height: 30%;
-				border-radius: 0 0 12px 12px;
-				transition: .4s linear;
-				opacity: 0;
-				text-decoration: none;
-				.item__projeto--legenda-card{
-					display: flex;
-					align-items: center;
-					justify-content: space-evenly;
-					padding: 13px 0 0;
-					span{
-						color: #fff;
-						font-size: 20px;
-					}
-				}
-				> span{
-					font-size: 18px;
-					color: #fff;
-					text-align: center;
-					display: block;
-					text-decoration: underline;
-				}
-			}
-		}
-	}
+    .item__projeto--link {
+      padding: 16px;
+      .item__projeto--legenda-card {
+        > span {
+          color: #282938;
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 45px;
+        }
+        p {
+          color: #1C1E53;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          margin-bottom: 15px;
+        }
+      }
+      > a {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+      }
+    }
+  }
 `;
