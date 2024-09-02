@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle `
+export const GlobalStyle = createGlobalStyle`
     :root {
         --body: #f0f2f5;
         --price-negative: #e52e4d;
@@ -49,4 +49,15 @@ export const GlobalStyle = createGlobalStyle `
         opacity: 0.6;
         cursor: not-allowed;
     }
-`
+
+    .manutencao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        span {
+            display: block;
+            font-size: 6rem;
+        }
+    }
+`;

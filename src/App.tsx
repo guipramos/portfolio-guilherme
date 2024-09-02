@@ -22,7 +22,7 @@ function App() {
       <Content />
       <Footer /> */}
       <div className="manutencao">
-        <span>Pagina em construção</span>
+        <span>Página em construção</span>
       </div>
       <GlobalStyle />
     </div>
